@@ -6,6 +6,7 @@ import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import Box from "./Box";
 import SideBarItem from "./SideBarItem";
+import Library from "./Library";
 
 interface SideBarProps {
   children: React.ReactNode;
@@ -44,7 +45,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
         </Box>
 
         {/* Song Library */}
-        <Box className="overflow-y-auto h-full">Song Library</Box>
+        <Library />
       </div>
 
       <main className="flex-1 h-full overflow-auto py-2">{children}</main>
